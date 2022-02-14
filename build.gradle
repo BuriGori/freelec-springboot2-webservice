@@ -1,6 +1,6 @@
 buildscript {
     ext{
-        springBootVersion = '2.1.7.RELEASE'
+        springBootVersion = '2.2.0.RELEASE'
     }
     repositories{
         mavenCentral()
@@ -25,8 +25,8 @@ repositories {
 }
 
 dependencies {
-//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    //testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    //testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 
     compile('com.h2database:h2')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
@@ -37,6 +37,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
     compile('org.springframework.session:spring-session-jdbc')
     testCompile('org.springframework.security:spring-security-test')
+    compile("org.mariadb.jdbc:mariadb-java-client")
 }
 
 test {
